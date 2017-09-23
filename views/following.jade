@@ -1,0 +1,19 @@
+.grid-33
+    .app--section
+        ul.app--user--list
+          each follow in following
+            li
+              .circle--fluid
+                .circle--fluid--cell.circle--fluid--primary
+                  a.app--tweet--author
+                    .app--avatar(style='background-image: url(#{follow.image})')
+                    |                   
+                    h4 #{follow.name}
+                    |                   
+                    p #{follow.sname}
+                |               
+                .circle--fluid--cell
+                  if follow.following
+                    a.button.button-text Unfollow
+                  else
+                    a.button Follow

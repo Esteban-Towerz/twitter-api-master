@@ -1,0 +1,15 @@
+.grid-33
+    .app--section
+        ul.app--message--list
+         each dmessage in dmessages
+          li
+            h3
+              | Conversation with 
+              a #{dmessage.name}
+            |             
+            ul.app--message--conversation
+              li.app--message
+                .app--avatar(style='background-image: url(#{dmessage.image})')
+                  img(src='images/f-spore.png')
+                |                 
+                p.app--message--text #{dmessage.text}
