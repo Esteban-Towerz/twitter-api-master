@@ -15,8 +15,8 @@ This app does following
 ## Getting Started
 ### Setup
 ```
-$ git clone https://github.com//twitter-api.git
-$ cd twitter-api
+$ git clone https://github.com/Esteban-Towerz/twitter-api-master.git
+$ cd twitter-api-master
 ```
 ### Install
 ```
@@ -24,7 +24,7 @@ $ npm install
 ```
 ### Run
 ```
-node start
+node server.js
 ```
 ### View
 Open browser and visit  ```http://localhost:3000```
